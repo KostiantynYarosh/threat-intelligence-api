@@ -81,10 +81,10 @@ curl -H "X-API-Key: test-api-key-123" http://localhost:8080/api/v1/check/ip/8.8.
 **Response:**
 ```json
 {
-  "virustotal": {...},
-  "abuseipdb": {...},
-  "alienvault_otx": {...},
-  "ipqualityscore": {...}
+  "virustotal": {},
+  "abuseipdb": {},
+  "alienvault_otx": {},
+  "ipqualityscore": {}
 }
 ```
 
@@ -101,8 +101,8 @@ curl -H "X-API-Key: test-api-key-123" http://localhost:8080/api/v1/check/domain/
 **Response:**
 ```json
 {
-  "virustotal": {...},
-  "alienvault_otx": {...}
+  "virustotal": {},
+  "alienvault_otx": {}
 }
 ```
 
@@ -121,7 +121,7 @@ curl -H "X-API-Key: test-api-key-123" http://localhost:8080/api/v1/check/apt/APT
 {
   "alienvault_otx": {
     "count": 127,
-    "results": [...]
+    "results": []
   }
 }
 ```
