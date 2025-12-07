@@ -227,10 +227,7 @@ func checkRateLimit(rdb *redis.Client) gin.HandlerFunc {
 }
 
 func main() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
+	godotenv.Load()
 
 	neonConnUrl := os.Getenv("NEON_DATABASE_URL")
 
